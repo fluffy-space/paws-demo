@@ -1,0 +1,24 @@
+{
+    "name": "fluffy-space/paws-demo",
+    "description": "Paws application demo",
+    "type": "project",
+    "require": {
+        "fluffy-space/paws": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "Application/",
+            "Components\\": "viewi-app/Components/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Voitovych",
+            "email": "col606v@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "swoole/ide-helper": "^6.0"
+    }
+}
