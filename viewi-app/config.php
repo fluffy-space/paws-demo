@@ -1,5 +1,6 @@
 <?php
 
+use Pupils\FluffyPupils;
 use Viewi\AppConfig;
 
 $d = DIRECTORY_SEPARATOR;
@@ -12,6 +13,7 @@ $publicPath = __DIR__ . $d . '..' . $d . 'public';
 $assetsPublicUrl = '';
 
 $viewiConfig = (new AppConfig('paws'))
+    ->use(FluffyPupils::class)
     ->buildTo($buildPath)
     ->buildFrom($componentsPath)
     ->withJsEntry($jsPath)
