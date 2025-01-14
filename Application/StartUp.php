@@ -3,13 +3,11 @@
 namespace Application;
 
 use DotDi\DependencyInjection\IServiceProvider;
-use DotDi\DependencyInjection\ServiceProviderHelper;
 use Fluffy\Domain\App\BaseApp;
 use Fluffy\Domain\App\BaseStartUp;
 use Fluffy\Domain\App\RequestDelegate;
-use Fluffy\Domain\Configuration\Config;
-use Fluffy\Domain\Message\HttpRequest;
 use Fluffy\Domain\Message\HttpResponse;
+use Fluffy\Middleware\RoutingMiddleware;
 use Throwable;
 
 /** @namespaces **/
@@ -74,19 +72,15 @@ class StartUp extends BaseStartUp
             }
         });
 
-        // $app->use(function (RequestDelegate $next, SessionContext $sessionContext) {
-        //     // uncomment in order to track request activities
-        //     // TODO: protect from flood
-        //     // $sessionContext->SaveSession();
-        //     $next();
-        // });
-
+        // routes handler
+        $app->use(RoutingMiddleware::class);
 
         // prepare crontab tasks
         include_once __DIR__ . '/crontab.php';
 
-        // prepare routes and Viewi
-        $viewiApp = $this->viewiApp;
+        // prepare routes and Viewi        
+        $serviceProvider = $app->getProvider();
+        $viewiApp = $serviceProvider->get(\Viewi\App::class);
         include_once __DIR__ . '/routes.php';
 
         // prepare socket hubs
