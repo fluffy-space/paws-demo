@@ -1,0 +1,51 @@
+.modal-content>.btn-close {
+    align-self: end;
+    margin: 10px 10px 0 0;
+}
+
+.viewi-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon {
+    fill: currentColor;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.icon-sm {
+    width: 1em;
+    height: 1em;
+}
+
+.pagination {
+    margin-bottom: 0;
+}
+
+.alert:not(.show) {
+    display: none;
+}
+
+.icon-btn {
+    width: 2.5em;
+    height: 2.5em;
+    min-width: 2.5em;
+    min-height: 2.5em;
+}
+
+.d-flex-collapse.show,
+.d-flex-collapse.collapsing {
+    display: flex !important;
+}
+
+@media (min-width: 768px) {
+    .position-md-absolute {
+        position: absolute !important;
+    }
+
+    .position-md-relative {
+        position: relative !important;
+    }
+}
