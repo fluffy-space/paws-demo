@@ -8,6 +8,7 @@ use Fluffy\Domain\App\BaseStartUp;
 use Fluffy\Domain\App\RequestDelegate;
 use Fluffy\Domain\Message\HttpResponse;
 use Fluffy\Middleware\RoutingMiddleware;
+use FluffyPaws\PawsStartUp;
 use Throwable;
 
 /** @namespaces **/
@@ -18,6 +19,7 @@ class StartUp extends BaseStartUp
     public function __construct()
     {
         parent::__construct(__DIR__);
+        $this->useStartUp(PawsStartUp::class);
     }
 
     function configureServices(IServiceProvider $serviceProvider): void
@@ -53,6 +55,7 @@ class StartUp extends BaseStartUp
 
     function configure(BaseApp $app)
     {
+        parent::configure($app);
         $app->use(function (RequestDelegate $next, HttpResponse $response) {
             try {
                 $start = hrtime(true);
@@ -75,17 +78,13 @@ class StartUp extends BaseStartUp
         // routes handler
         $app->use(RoutingMiddleware::class);
 
-        // prepare crontab tasks
-        include_once __DIR__ . '/crontab.php';
-
         // prepare routes and Viewi        
         $serviceProvider = $app->getProvider();
         $viewiApp = $serviceProvider->get(\Viewi\App::class);
         include_once __DIR__ . '/routes.php';
+        $viewiApp->getConfig()->lazyLoadNamespace['Pupils\\Components\\Views\\Admin\\'] = 'admin';
 
         // prepare socket hubs
         include_once __DIR__ . '/hubs.php';
-
-        parent::configure($app);
     }
 }
