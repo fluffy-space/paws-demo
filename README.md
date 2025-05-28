@@ -4,7 +4,7 @@
 
 ### Set up Nginx on WSL
 
-`php fluffy nginx paws-demo.wsl.com`
+`sudo php fluffy nginx paws-demo.wsl.com`
 
 ### Run server
 

@@ -9,3 +9,4 @@ viewi-app/js/viewi/**/*
 */viewi-paws/**/*
 **/node_modules
 server.pid
+composer.lock
