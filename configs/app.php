@@ -1,5 +1,0 @@
-<?php
-
-$currentDir = getcwd();
-
-return [];

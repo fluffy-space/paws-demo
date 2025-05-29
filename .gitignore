@@ -10,3 +10,4 @@ viewi-app/js/viewi/**/*
 **/node_modules
 server.pid
 composer.lock
+configs/app.php
