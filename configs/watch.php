@@ -2,8 +2,11 @@
 
 return [
     'before' => function ($dir) {
-        System('sudo service nginx start');
-        System('sudo service postgresql start');
+        if (file_exists('/proc/sys/fs/binfmt_misc/WSLInterop')) {
+            // we are in wsl
+            System('sudo service nginx start');
+            System('sudo service postgresql start');
+        }
         $command = "php fluffy build local";
         System($command);
         $pid = @file_get_contents($dir . '/server.pid');

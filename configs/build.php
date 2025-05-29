@@ -17,10 +17,6 @@ $localVars = [
         "https://paws-demo.wsl.com"
     ],
     "REDIS_DB_INDEX" => 3,
-    "PG_PORT" => 5432,
-    'PG_DB' => 'paws-demo',
-    'PG_USER' => 'paws-demo',
-    'PG_PASSWORD' => 'paws-demo'
 ];
 
 $prod = [
@@ -37,11 +33,7 @@ $prod = [
     "ORIGINS_ALLOWED_ARRAY" => [
         "https://paws-demo.com"
     ],
-    "REDIS_DB_INDEX" => 3,
-    "PG_PORT" => 5432,
-    'PG_DB' => 'paws-demo',
-    'PG_USER' => 'paws-demo',
-    'PG_PASSWORD' => 'paws-demo'
+    "REDIS_DB_INDEX" => 3,    
 ];
 
 return [
@@ -96,9 +88,9 @@ return [
             $vars = $builder->getVariables();
             foreach (
                 [
-                    // ['target' => '/Application/config.php', 'template' => '/Application/config.default.php'],
-                    // ['target' => '/viewi-app/publicConfig.php', 'template' => '/viewi-app/publicConfig.php.template'],
-                    // ['target' => '/viewi-app/config.php', 'template' => '/viewi-app/config.php.template']
+                    ['target' => '/configs/app.php', 'template' => '/configs/app.default.php'],
+                    //['target' => '/viewi-app/publicConfig.php', 'template' => '/viewi-app/publicConfig.php.template'],
+                    //['target' => '/viewi-app/config.php', 'template' => '/viewi-app/config.php.template']
                 ] as $configFiles
             ) {
                 $target = $builder->getBaseDir() . $configFiles['target'];
