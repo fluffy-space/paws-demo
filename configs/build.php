@@ -89,7 +89,7 @@ return [
             foreach (
                 [
                     ['target' => '/configs/app.php', 'template' => '/configs/app.default.php'],
-                    //['target' => '/viewi-app/publicConfig.php', 'template' => '/viewi-app/publicConfig.php.template'],
+                    ['target' => '/viewi-app/publicConfig.php', 'template' => '/viewi-app/publicConfig.php.template'],
                     //['target' => '/viewi-app/config.php', 'template' => '/viewi-app/config.php.template']
                 ] as $configFiles
             ) {
