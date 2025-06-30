@@ -34,3 +34,8 @@ git config core.filemode false
 git clone https://github.com/viewi/ui.git temp && mv temp/.git vendor/viewi/ui/.git && rm -rf temp
 code vendor/viewi/ui
 git config core.filemode false
+
+
+## Remove ignored file from history
+
+git rm --cached file1 file2 dir/file3
