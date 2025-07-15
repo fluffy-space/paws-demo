@@ -2,6 +2,10 @@
 
 ## Commands
 
+### Set up DB tables and oathers
+
+`php fluffy migrate`
+
 ### Set up Nginx on WSL
 
 `sudo php fluffy nginx paws-demo.wsl.com`

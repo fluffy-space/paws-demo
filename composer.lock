@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "fluffy-space/fluffy",
-            "version": "v1.1.1",
+            "version": "v1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fluffy-space/fluffy.git",
-                "reference": "7302c5a1f6c893e537462f8a188515a3d50c3ca8"
+                "reference": "2fc89f5d5d387935598c4d391705f309a31d669a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fluffy-space/fluffy/zipball/7302c5a1f6c893e537462f8a188515a3d50c3ca8",
-                "reference": "7302c5a1f6c893e537462f8a188515a3d50c3ca8",
+                "url": "https://api.github.com/repos/fluffy-space/fluffy/zipball/2fc89f5d5d387935598c4d391705f309a31d669a",
+                "reference": "2fc89f5d5d387935598c4d391705f309a31d669a",
                 "shasum": ""
             },
             "require": {
@@ -46,22 +46,22 @@
             "description": "Fluffy framework. Based on Viewi and Swoole.",
             "support": {
                 "issues": "https://github.com/fluffy-space/fluffy/issues",
-                "source": "https://github.com/fluffy-space/fluffy/tree/v1.1.1"
+                "source": "https://github.com/fluffy-space/fluffy/tree/v1.1.5"
             },
-            "time": "2025-01-04T11:39:14+00:00"
+            "time": "2025-02-16T13:48:42+00:00"
         },
         {
             "name": "fluffy-space/paws",
-            "version": "v1.0.0",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fluffy-space/paws.git",
-                "reference": "efcbc2c9e11b888e32832b8da02f145c212fd3e5"
+                "reference": "8a2d62ff3e672f4081e7f6b5e56a5644f9cba00a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fluffy-space/paws/zipball/efcbc2c9e11b888e32832b8da02f145c212fd3e5",
-                "reference": "efcbc2c9e11b888e32832b8da02f145c212fd3e5",
+                "url": "https://api.github.com/repos/fluffy-space/paws/zipball/8a2d62ff3e672f4081e7f6b5e56a5644f9cba00a",
+                "reference": "8a2d62ff3e672f4081e7f6b5e56a5644f9cba00a",
                 "shasum": ""
             },
             "require": {
@@ -71,6 +71,7 @@
             "type": "project",
             "autoload": {
                 "psr-4": {
+                    "Pupils\\": "Pupils/src/",
                     "FluffyPaws\\": "FluffyPaws/",
                     "SharedPaws\\": "SharedPaws/"
                 }
@@ -88,22 +89,22 @@
             "description": "Fluffy Paws - Web application framework. Treats included ;)",
             "support": {
                 "issues": "https://github.com/fluffy-space/paws/issues",
-                "source": "https://github.com/fluffy-space/paws/tree/v1.0.0"
+                "source": "https://github.com/fluffy-space/paws/tree/v1.0.4"
             },
-            "time": "2025-01-10T11:40:12+00:00"
+            "time": "2025-05-15T13:49:10+00:00"
         },
         {
             "name": "ivanvoitovych/dot-di",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanvoitovych/dot-di.git",
-                "reference": "f57924b977b7100ef8958fd46e2948c63e504ff3"
+                "reference": "d408f9379b3597462bfeb561e7a9deda2a28d985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanvoitovych/dot-di/zipball/f57924b977b7100ef8958fd46e2948c63e504ff3",
-                "reference": "f57924b977b7100ef8958fd46e2948c63e504ff3",
+                "url": "https://api.github.com/repos/ivanvoitovych/dot-di/zipball/d408f9379b3597462bfeb561e7a9deda2a28d985",
+                "reference": "d408f9379b3597462bfeb561e7a9deda2a28d985",
                 "shasum": ""
             },
             "type": "library",
@@ -125,22 +126,22 @@
             "description": "DI and service provider for PHP. Inspired by .NET DI.",
             "support": {
                 "issues": "https://github.com/ivanvoitovych/dot-di/issues",
-                "source": "https://github.com/ivanvoitovych/dot-di/tree/v1.1.3"
+                "source": "https://github.com/ivanvoitovych/dot-di/tree/v1.1.4"
             },
-            "time": "2024-04-21T13:42:40+00:00"
+            "time": "2025-01-15T12:42:24+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.4.0",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
+                "reference": "ae59794362fe85e051a58ad36b289443f57be7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
-                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ae59794362fe85e051a58ad36b289443f57be7a9",
+                "reference": "ae59794362fe85e051a58ad36b289443f57be7a9",
                 "shasum": ""
             },
             "require": {
@@ -183,22 +184,22 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.5.0"
             },
-            "time": "2024-12-30T11:07:19+00:00"
+            "time": "2025-05-31T08:24:38+00:00"
         },
         {
             "name": "viewi/icons",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/viewi/icons.git",
-                "reference": "da8a56e28e0f30e185767d225d517de6254c5569"
+                "reference": "696fa00b8eb8163db8e6d4a1d0dc42de25c4f2df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viewi/icons/zipball/da8a56e28e0f30e185767d225d517de6254c5569",
-                "reference": "da8a56e28e0f30e185767d225d517de6254c5569",
+                "url": "https://api.github.com/repos/viewi/icons/zipball/696fa00b8eb8163db8e6d4a1d0dc42de25c4f2df",
+                "reference": "696fa00b8eb8163db8e6d4a1d0dc42de25c4f2df",
                 "shasum": ""
             },
             "require": {
@@ -223,22 +224,22 @@
             "description": "SVG icons package for Viewi",
             "support": {
                 "issues": "https://github.com/viewi/icons/issues",
-                "source": "https://github.com/viewi/icons/tree/v1.1.1"
+                "source": "https://github.com/viewi/icons/tree/v1.1.2"
             },
-            "time": "2024-12-29T09:21:11+00:00"
+            "time": "2025-01-14T10:20:48+00:00"
         },
         {
             "name": "viewi/ui",
-            "version": "v1.0.0",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/viewi/ui.git",
-                "reference": "019246fc9d29bd380f199225679b0fb1ef00242b"
+                "reference": "1986ec02b03513c6f0a8f15bd292d6ce9f4e2cbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viewi/ui/zipball/019246fc9d29bd380f199225679b0fb1ef00242b",
-                "reference": "019246fc9d29bd380f199225679b0fb1ef00242b",
+                "url": "https://api.github.com/repos/viewi/ui/zipball/1986ec02b03513c6f0a8f15bd292d6ce9f4e2cbf",
+                "reference": "1986ec02b03513c6f0a8f15bd292d6ce9f4e2cbf",
                 "shasum": ""
             },
             "require": {
@@ -264,22 +265,22 @@
             "description": "Viewi UI library",
             "support": {
                 "issues": "https://github.com/viewi/ui/issues",
-                "source": "https://github.com/viewi/ui/tree/v1.0.0"
+                "source": "https://github.com/viewi/ui/tree/v1.0.4"
             },
-            "time": "2025-01-01T15:32:49+00:00"
+            "time": "2025-05-15T13:45:19+00:00"
         },
         {
             "name": "viewi/viewi",
-            "version": "v2.5.1",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/viewi/viewi.git",
-                "reference": "0bd4c70fd65465333f45b441f2af5e5c8ccf3b9d"
+                "reference": "c920290161cf610451523bd5b28416abc9281645"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viewi/viewi/zipball/0bd4c70fd65465333f45b441f2af5e5c8ccf3b9d",
-                "reference": "0bd4c70fd65465333f45b441f2af5e5c8ccf3b9d",
+                "url": "https://api.github.com/repos/viewi/viewi/zipball/c920290161cf610451523bd5b28416abc9281645",
+                "reference": "c920290161cf610451523bd5b28416abc9281645",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +324,7 @@
             ],
             "support": {
                 "issues": "https://github.com/viewi/viewi/issues",
-                "source": "https://github.com/viewi/viewi/tree/v2.5.1"
+                "source": "https://github.com/viewi/viewi/tree/v2.6.4"
             },
             "funding": [
                 {
@@ -331,22 +332,22 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-12-29T08:10:04+00:00"
+            "time": "2025-05-15T14:49:42+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "swoole/ide-helper",
-            "version": "6.0.0",
+            "version": "6.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole/ide-helper.git",
-                "reference": "86a61562a1f1634339ee52f3b8988591f51a2799"
+                "reference": "6f12243dce071714c5febe059578d909698f9a52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/86a61562a1f1634339ee52f3b8988591f51a2799",
-                "reference": "86a61562a1f1634339ee52f3b8988591f51a2799",
+                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/6f12243dce071714c5febe059578d909698f9a52",
+                "reference": "6f12243dce071714c5febe059578d909698f9a52",
                 "shasum": ""
             },
             "type": "library",
@@ -363,9 +364,9 @@
             "description": "IDE help files for Swoole.",
             "support": {
                 "issues": "https://github.com/swoole/ide-helper/issues",
-                "source": "https://github.com/swoole/ide-helper/tree/6.0.0"
+                "source": "https://github.com/swoole/ide-helper/tree/6.0.2"
             },
-            "time": "2025-01-03T19:08:24+00:00"
+            "time": "2025-03-23T07:31:41+00:00"
         }
     ],
     "aliases": [],
@@ -375,5 +376,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
