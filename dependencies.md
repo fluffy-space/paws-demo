@@ -97,3 +97,6 @@ git config core.filemode false && \
 git pull && \
 git checkout . && \
 cd ../../../
+
+
+curl -I -k https://paws-demo.wsl.com/
