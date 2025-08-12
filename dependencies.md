@@ -98,5 +98,10 @@ git pull && \
 git checkout . && \
 cd ../../../
 
-
+HEAD
 curl -I -k https://paws-demo.wsl.com/
+
+OPTIONS
+curl -I -k -X OPTIONS https://paws-demo.wsl.com/
+curl -I -k -X OPTIONS https://paws-demo.wsl.com/api/admin/blog
+curl -I -k -X OPTIONS https://paws-demo.wsl.com/api/admin/blog/2
